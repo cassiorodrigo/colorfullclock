@@ -1,0 +1,21 @@
+<Base>:
+    cor:0, 0, 0, 0
+    BoxLayout:
+        orientation:'vertical'
+        Label:
+            id:relogio_lbl
+            text:self.parent.parent.relogio()
+            font_size:100
+            color: root.cor
+        Button:
+            text:'Sair'
+            on_release:app.Pop1.open()
+
+
+<Pop1>:
+    title:'Sair?'
+    name:'Pop1'
+    id:Pop1
+    BoxLayout:
+        Button:
+            text:'Sair'
